@@ -1,0 +1,43 @@
+#Devfinderdiv{
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+#devfinderlab{
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 26px;
+    color: #2B3442;
+}
+
+#Toggelbtn{
+    width: 80px;
+    height: 20px;
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: row;
+align-items: center;
+justify-content: space-between;
+cursor: pointer;
+background-color: transparent;
+}
+
+#crusenticonimg{
+    width: 20px;
+    height: 20px;
+}
+
+#Darklab{
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 13px;
+}
+

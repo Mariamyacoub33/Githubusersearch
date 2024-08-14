@@ -1,0 +1,179 @@
+#Octocatdiv{
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.darkHeader{
+    background-color: #1E2A47;
+}
+
+.lightHeader{
+    background-color: white;
+}
+
+#blobimg{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+padding: 10px;
+box-sizing: border-box;
+}
+
+#rightside{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#firstline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#theoct{
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 26px;
+    color: #2B3442;
+}
+
+#Join{
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 15px;
+    color: #697C9A;
+}
+
+#seclabel{
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 16px;
+    color: #0079FF;
+}
+
+#Loremip{
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 15px;
+    color: #4B6A9B;
+}
+
+#followupdiv{
+    width: 100%;
+    height: 85px;
+    background-color: #F6F8FF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+border-radius: 20px;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.Followdiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.term{
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 13px;
+    color: #4B6A9B;
+}
+
+.Num{
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 22px;
+    color: #2B3442;
+}
+
+#contactdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imglink{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+gap: 7px;
+}
+
+.IMGCONT{
+    width: 20PX;
+    height: 20PX;
+    color: #4B6A9B;
+}
+
+.LINK{
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 15px;
+    color: #4B6A9B;
+}
+
+#github{
+    padding-right: 50px;
+}
+
+@media only screen and (max-width: 450px) {
+    #Octocatdiv{
+        width: 90%;
+        height: 80%;
+        position: relative;
+}
+
+#blobimg{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+#firstline{
+    flex-direction: column;
+
+}
+
+#seclabel{
+    position: absolute;
+    right: 210px;
+    top: 60px;
+}
+
+#contactdiv{
+    align-items: start;
+    justify-content: start;
+}
+
+.line{
+    flex-direction: column;
+}
+
+#github{
+    padding-right: 100px;
+}
+}

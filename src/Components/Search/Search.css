@@ -1,0 +1,61 @@
+#Searchdiv{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(226, 220, 220, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(226, 220, 220, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(226, 220, 220, 0.75);
+}
+
+.darkHeader{
+    background-color: #1E2A47;
+}
+
+.lightHeader{
+    background-color: white;
+}
+
+#Searchiconimg{
+    width: 25px;
+    height: 24px;
+    padding-right: 20px;
+}
+
+input[type="text"] {
+    width: 255px;
+    border: none; /* إزالة الحدود */
+    outline: none; /* إزالة التأطير الافتراضي عند التركيز */
+}
+
+input[type="text"]::placeholder {
+    color: #4B6A9B;
+    font-family: "SpaceMono";
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#Searchbtn{
+    width: 110px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    background-color: #0079FF;
+    border: none;
+    font-family: "SpaceMono";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 450px) {
+    input[type="text"] {
+        width: 185px;
+    }
+
+}
