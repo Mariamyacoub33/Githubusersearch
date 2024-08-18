@@ -8,58 +8,72 @@ import linkimg from "../../assets/image/link.png";
 import githubicon from "../../assets/image/@github.png";
 
 
-function Octocat() {
+function Octocat(
+  key,
+  avatar_url,
+  name,
+  login,
+  public_repos,
+  followers,
+  following,
+  location,
+  blog,
+  twitter_username,
+  company,
+  loading,
+  date,
+  bio
+) {
     const passedValues = useContext(ThemeContext);
   return (
-    <div id="Octocatdiv" className={`${passedValues.theme}Header`}>
-      <img id="blobimg" src={blobimg} />
+    <div id="Octocatdiv" className={passedValues.theme + "Header"}>
+     (!loading? <img id="blobimg" src={avatar_url} />
       <div id="rightside">
         <div id="firstline">
-          <label id="theoct">The Octocat</label>
-          <p id="Join">Joined 25 Jan 2011</p>
+          <label id="theoct">{name}</label>
+          <p id="Join">Joined at {date}</p>
         </div>
-        <label id="seclabel">@octocat</label>
+        <label id="seclabel">{login}</label>
         <p id="Loremip">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros.
+          {bio}
         </p>
         <div id="followupdiv">
 <div className="Followdiv">
     <label className="term">Repos</label>
-    <label className="Num">8</label>
+    <label className="Num">{public_repos}</label>
 </div>
 <div className="Followdiv">
     <label className="term">Followers</label>
-    <label className="Num">3938</label>
+    <label className="Num">{followers}</label>
 </div>
 <div className="Followdiv">
     <label className="term">Following</label>
-    <label className="Num">9</label>
+    <label className="Num">{following}</label>
 </div>
         </div>
         <div id="contactdiv">
        <div className="line">
     <div className="imglink">
     <img className="IMGCONT" src={mapimg}/>
-    <label className="LINK">San Francisco</label>
+    <label className="LINK">{location?location:"Not Found"}</label>
     </div>
     <div className="imglink">
     <img className="IMGCONT" src={twitterimg}/>
-    <label className="LINK">Not Available</label>
+    <label className="LINK">{twitter_username?twitter_username:"Not Avaliable"}</label>
     </div>
     </div>
     <div className="line">
     <div className="imglink">
     <img className="IMGCONT" src={linkimg}/>
-    <label className="LINK">https://github.blog</label>
+    <label className="LINK">{blog?blog:"Not Found"}</label>
     </div>
     <div id="github" className="imglink">
     <img className="IMGCONT" src={githubicon}/>
-    <label className="LINK">@github</label>
+    <label className="LINK">{company?company:"Not Found"}</label>
     </div>
     </div>
 </div>
-      </div>
+      </div> :<div className="rounded-full h-4 w-4 border border-dark-blue border-t-transparent animate-spin"></div>)
     </div>
   );
 }

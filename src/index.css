@@ -22,7 +22,16 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #F6F8FF;
+}
+
+.darkHeader{
+  background-color: #1E2A47;
+  color: white;
+}
+
+.lightHeader{
+  background-color: white;
+  color: #1E2A47;
 }
 
 #root{

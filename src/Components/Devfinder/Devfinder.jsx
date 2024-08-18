@@ -6,22 +6,21 @@ import { useContext } from "react";
 function Devfinder () {
     const theme = useContext(ThemeContext);
 
+
     function onClick(event) {
-        let newValue;
-        if (event.target.checked == false){
-          newValue ="light";
+        if (theme.theme == "light"){
+          theme.setTheme("dark");
         } else {
-          newValue ="dark";
+          theme.setTheme("light");
         }
-    theme.setTheme(newValue);
-    console.log(newValue)
+
       }
 
     return(
         <div id='Devfinderdiv'>
             <label id="devfinderlab">devfinder</label>
-            <button id="Toggelbtn" onClick={onClick} >
-                <label id="Darklab">DARK</label>
+            <button value={theme.theme} id="Toggelbtn" onClick={onClick} >
+                <label id="Darklab" >{theme.theme}</label>
                 <img id="crusenticonimg" src={crusenticon}/>
             </button>
         </div>

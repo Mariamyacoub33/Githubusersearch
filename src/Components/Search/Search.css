@@ -1,7 +1,6 @@
 #Searchdiv{
     width: 100%;
     height: 70px;
-    background-color: white;
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -16,16 +15,19 @@
 
 .darkHeader{
     background-color: #1E2A47;
+    color: white;
 }
 
 .lightHeader{
     background-color: white;
+    color: #1E2A47;
 }
 
 #Searchiconimg{
     width: 25px;
     height: 24px;
     padding-right: 20px;
+    background-color: transparent;
 }
 
 input[type="text"] {
